@@ -2,18 +2,16 @@ import { type Team } from "@/lib/types";
 import { Chakra_Petch } from "next/font/google";
 import Image from "next/image";
 
-const font = Chakra_Petch({
-	subsets: ["latin"],
-	weight: ["300", "400", "500", "600", "700"],
-});
-
-const TeamContainer = ({ team }: { team: Team }) => {
+const TeamContainer = ({ team, key }: { team: Team; key: string }) => {
 	return (
 		<div
-			key={team._id}
 			className="flex flex-col md:flex-row border rounded-lg gap-y-2 items-center justify-evenly m-2 p-4"
+			key={key}
 		>
-			<div className="bg-neutral-600 rounded-full overflow-clip flex md:flex-col">
+			<div
+				className="bg-neutral-600 rounded-full overflow-clip flex md:flex-col"
+				key={key}
+			>
 				{team.members.map((member) => (
 					<Image
 						key={member.id}
