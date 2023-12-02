@@ -1,4 +1,3 @@
-
 # Heliverse Full Stack Assignment (Front-end)
 
 ## Frontend functionalities:
@@ -16,11 +15,12 @@
 - Responsive and appealing UI
 
 ## Tech Used:
-- React for UI components
+
+- React and Typescript for UI components
 - Next JS
 - Tailwind CSS
 - Shadcn UI
 
-
 ## 🔗 Links
+
 [Deployment Link](https://heliverse-frontend-liart.vercel.app/)
