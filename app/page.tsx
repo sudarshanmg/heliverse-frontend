@@ -21,7 +21,7 @@ export default async function Home({
 
 	return (
 		<div className="m-4">
-			<header className="font-serif text-2xl md:text-5xl m-auto w-full text-center">
+			<header className="font-serif text-2xl md:text-5xl mx-auto my-8 w-full text-center">
 				Heliverse Assignment
 			</header>
 			<UsersSearch
